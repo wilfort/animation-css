@@ -1,0 +1,126 @@
+#stage{
+    
+    background-color: #F4ECEC;
+    
+    border: 1px dashed #C8C8C8; 
+    width:590px;
+    height:590px;
+    
+    margin: auto;
+    box-sizing: content-box;
+    box-shadow: 0px 0px 0px 5px #F4ECEC;
+}
+/* Étape 1
+@keyframes example {
+    0%   { left:10px; top:10px;}
+    100%  { left:505px; top:10px;}
+}
+#hero{
+    position: relative;
+    border: 1px dashed red;
+    left:10px; top:10px;
+    width: 75px;
+    height: 75px;
+    animation-name: example;
+    animation-duration: 5s;
+} */
+
+/* Étape 2
+@keyframes example {
+    0%   { left:10px; top:10px;}
+    100%  { left: 505px; top:10px;}
+}
+#hero{
+    position: relative;
+    border: 1px dashed red;
+    left:10px; top:10px;
+    width: 75px;
+    height: 75px;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+} */
+ /* Étape 3
+ @keyframes example {
+    0%   { left:10px; top:10px;}
+    50%  { left: 505px; top:10px;}
+    100%   { left:10px; top:10px;}
+}
+#hero{
+    position: relative;
+    border: 1px dashed red;
+    left:10px; top:10px;
+    width: 75px;
+    height: 75px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}  */
+
+@keyframes example {
+    0%{ 
+        left:10px; top:10px; 
+        /* transform: rotate(0deg);
+        border: 1px dashed red;
+        width: 75px;height: 75px;
+        border-radius: 0%;
+        background:transparent; */
+    }
+    25%{ 
+        left: 505px; top:10px;
+        /* transform: rotate(0deg);
+        border: 1px dashed red;
+        width: 75px;height: 75px;
+        border-radius: 0%;
+        background:transparent; */
+    }
+    50%{
+        left: 505px; top:190px;
+        transform: rotate(0deg);
+        /* border: 1px dashed red;
+        width: 75px;height: 75px;
+        border-radius: 0%;
+        background:transparent; */
+    }
+    52.5%{
+        left: 250px; top:190px;
+        transform: rotate(-45deg);
+        /* border: 1px dashed red;
+        width: 75px;height: 75px;
+        border-radius: 0%;
+        background:transparent; */
+    }
+    62.5%{
+        left: 250px; top:190px;
+        transform: rotate(-45deg);
+        border: 1px dashed red;
+        /* width: 75px;height: 75px;
+        border-radius: 0%;
+        background:transparent; */
+    }
+    75%{
+        left:10px;top:190px;
+        transform: rotate(-90deg);
+        border: 1px dashed #0900BD ;
+        width: 75px;height: 75px;
+        border-radius: 0%;
+        background:transparent;
+    }
+    100%{
+        left: 440px; top:440px;
+        width: 150px;height: 150px;
+        border-radius: 100%;
+        background: radial-gradient(rgb(251, 218, 97),rgb(247, 107, 28));border:none;
+        }
+}
+#hero{
+    position: relative;
+    border: 1px dashed red;
+    left:10px; top:10px;
+    width: 75px;
+    height: 75px;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
